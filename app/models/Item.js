@@ -3,19 +3,19 @@ const { Schema, model } = require('mongoose')
 module.exports = model('Item', new Schema({
     itemName: {
         type: String,
-        require: true,
+        required: true,
     },
     itemPrice: {
         type: Number,
-        require: true,
+        required: true,
     },
     itemDescription: {
         type: String,
-        require: true,
+        required: true,
     },
     itemImage: {
         type: String,
-        require: true,
+        required: true,
     },
     createdOn: {
         type: Date,
